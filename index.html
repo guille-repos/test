@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      async function todoEsto() {
+        //ASINCRONO tarea 1
+        const res = await fetch(
+          "https://pokeapi.co/api/v2/poksdsdsdsdsdemon/ditto"
+        );
+        const resEnJson = await res.json();
+        console.log(1);
+
+        //ASINCRONO tarea 1
+        const res3 = await fetch("https://pokeapi.co/api/v2/ability/7/");
+        const resEnJson4 = await res3.json();
+        console.log(2);
+
+        //ASINCRONO tarea 1
+        const res5 = await fetch("https://pokeapi.co/api/v2/ability/6/");
+        const resEnJson6 = await res5.json();
+        console.log(3);
+      }
+
+      todoEsto();
+    </script>
+  </body>
+</html>

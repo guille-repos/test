@@ -1,3 +1,8 @@
-console.log(
-  "que grande este alumno tiene mucho conocimiento!!! gracias a el existe este repo que nos va a sacar adelante!!"
-);
+fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+  .then((res) => res.json())
+  .then((resEnJson) => {
+    console.log(resEnJson);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
